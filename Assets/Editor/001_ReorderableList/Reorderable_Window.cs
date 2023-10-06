@@ -27,7 +27,7 @@ public class Reorderable_Window : EditorWindow
         }
 
         [SerializeField]
-        private List<Node> m_nodes = new List<Node>();
+        List<Node> m_nodes = new List<Node>();
 
         public List<Node> Nodes
         {
@@ -52,7 +52,7 @@ public class Reorderable_Window : EditorWindow
     }
 
 
-    private void OnGUI()
+    void OnGUI()
     {
         Init();
 
@@ -85,7 +85,7 @@ public class Reorderable_Window : EditorWindow
         }
     }
 
-    private void Init()
+    void Init()
     {
         if (m_reorderableCache == null)
         {
@@ -110,7 +110,7 @@ public class Reorderable_Window : EditorWindow
 
 
     // 最简单: 一行只有一个 obj slot;
-    private void OnDrawElementCallback(Rect rect, int index, bool isactive, bool isfocused)
+    void OnDrawElementCallback(Rect rect, int index, bool isactive, bool isfocused)
     {
         if (m_reorderableCache == null || m_reorderableCache.Nodes.Count < index)
         {
