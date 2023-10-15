@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 
 // 演示如何在一个 EditorWindow 中绘制一组 ReorderableList objs;
-
+// !!!  建议改用 Reorderable_Window2,  它经过了实战测试
 
 public class Reorderable_Window : EditorWindow
 {
